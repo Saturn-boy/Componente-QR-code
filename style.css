@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:  "Outfit", serif;;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--slate-300);
+}
+
+.card{
+    width: 320px;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0px 10px 40px hsl(216, 20%, 54%);
+}
+
+.card-image{
+    margin-bottom: 30px;
+}
+
+.card-image img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-title{
+    font-size: 22px;
+    color: var(--slate-900);
+    margin-bottom: 20px;
+}
+
+.card-description{
+    font-size: 12px;
+    color: var(--slate-500);
+}
+
+@media only screen and (max-width: 375px){
+    .card-description{
+        font-size: 15px;
+    }
+}
